@@ -17,6 +17,7 @@ namespace Mathgician
             if( "Integers" == desiredMaths)
             {
                 //Do something here
+                PrintIntegers();
             }
             else
             {
@@ -24,6 +25,16 @@ namespace Mathgician
             }
             System.Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
+        }
+
+        private static void PrintIntegers()
+        {
+            int NextInteger = 0;
+            while(true)
+            {
+                NextInteger++;
+                Console.WriteLine(NextInteger);
+            }
         }
     }
 }
